@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link src="app.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Serif+4:wght@900&display=swap"
+        rel="stylesheet">
+
+    <title>Coiffure online</title>
+</head>
+
+<body>
+    <div class="PageCentrale" id="BgChange">
+        <header>
+            <ul class="menu-desktop">
+                <div class="Logo">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <img src="img/logo1.png" alt="" srcset="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu2">
+                    <li>
+                        <a href="inscription-salon.html">Inscrire mon salon</a>
+                    </li>
+                    <li>
+                        <a href="connexion.html">Mon compte</a>
+                    </li>
+                    <li>
+                        <a href="musiques.html">Contacts</a>
+                    </li>
+                </div>
+            </ul>
+
+        </header>
+        <main>
+            <div class="home">
+                <p>Réservez le salon <br> <span class="texte-gras">qui vous correspond!</span></p>
+            </div>
+            <div class="container">
+                <div class="Localisation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="map"></ion-icon>
+                                </span>
+                                <p class="title">Autour de moi</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Etablissement">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="storefront"></ion-icon>
+                                </span>
+                                <p class="title">Etablissement</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contenu">
+                <div class="contenuLocalisation">
+                    <form class="formulaireUn" method="post" type="sample_request" data-num="0">
+                        <div class="api-form-control">
+                            <label for="apikey"></label>
+                            <div class="input-with-badge">
+                                <span class="icon">
+                                    <ion-icon class="iconForm" name="navigate"></ion-icon>
+                                    <select autocomplete="street-address" autocomplete="postal-code" name="pets" id="pet-select">
+                                        <option value="">--Please choose an option--</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="hamster">Hamster</option>
+                                        <option value="parrot">Parrot</option>
+                                        <option value="spider">Spider</option>
+                                        <option value="goldfish">Goldfish</option>
+                                    </select>
+                                    <input type="tel" name="apikey" placeholder="Ville ou code postale" value="">
+                                    <button id="find-me"><ion-icon name="navigate"></ion-icon></button>
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="api-form-control">
+                            <label for="apikey"></label>
+                            <div class="input-with-badge">
+                                <span class="icon">
+                                    <ion-icon class="iconForm" name="calendar-number"></ion-icon>
+                                    <input type="date" name="apikey" placeholder="Ajouter une date" value="">
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="api-form-control">
+                            <label for="apikey"></label>
+                            <div class="input-with-badge">
+                                <span class="icon">
+                                    <ion-icon class="iconForm" name="search-circle"></ion-icon>
+                                    <input name="apikey" placeholder="Prestation" value="">
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bouton-envoyer">
+                            <button type="submit" class="submit-button reset-button">C'EST PARTI !</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="container2">
+                <h2>Prenez rendez-vous en salon de coiffure ou institut à</h2>
+                <div class="slide-salon">
+                    <div class="slide1">
+                        <span>
+                            <p>Saint-Denis</p>
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        <span>
+                            <p>Le Port</p>
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        <span>
+                            <p>Saint-André</p>
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        <span>
+                            <p>Saint-Paul</p>
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        <span>
+                            <p>Saint-Leu</p>
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        <span>
+                            <p>Saint-Pierre</p>
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        <span>
+                            <p>Saint-Pierre</p>
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        <span>
+                            <p>Saint-Pierre</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div class="menu">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home" onclick="BgAcceuil()"></ion-icon>
+                            </span>
+                            <span class="title"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="calendar"></ion-icon>
+                            </span>
+                            <span class="title"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="person-circle" onclick="BgAcceuil()"></ion-icon>
+                            </span>
+                            <span class="title"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        navigator.geolocation.getCurrentPosition(function (position) {
+            faireQqc(position.coords.latitude, position.coords.longitude);
+        });
+        var watchID = navigator.geolocation.watchPosition(function (position) {
+            faireQqc(position.coords.latitude, position.coords.longitude);
+        });
+        navigator.geolocation.clearWatch(watchID);
+        function geo_success(position) {
+            do_something(position.coords.latitude, position.coords.longitude);
+        }
+
+        function geo_error() {
+            alert("Sorry, no position available.");
+        }
+
+        var geo_options = {
+            enableHighAccuracy: true,
+            maximumAge: 30000,
+            timeout: 27000
+        };
+
+        var wpid = navigator.geolocation.watchPosition(geo_success, geo_error, geo_options);
+        function errorCallback(error) {
+            alert('ERROR(' + error.code + '): ' + error.message);
+        };
+        function geoFindMe() {
+
+            const status = document.querySelector('#status');
+            const mapLink = document.querySelector('#map-link');
+
+            mapLink.href = '';
+            mapLink.textContent = '';
+
+            function success(position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                status.textContent = '';
+                mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+                mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+            }
+
+            function error() {
+                status.textContent = 'Unable to retrieve your location';
+            }
+
+            if (!navigator.geolocation) {
+                status.textContent = 'Geolocation is not supported by your browser';
+            } else {
+                status.textContent = 'Locating…';
+                navigator.geolocation.getCurrentPosition(success, error);
+            }
+
+        }
+
+        document.querySelector('#find-me').addEventListener('click', geoFindMe);
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
